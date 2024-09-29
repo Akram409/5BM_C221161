@@ -95,7 +95,71 @@ body {
     width: 520px;
   }
 
+/* Main Content */
+main {
+    margin-top: 150px;
+  }
 
+  /* Featured Flowers Section */
+  .featured-flowers-description {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    padding: 0px 280px;
+  }
+
+  .featured-flowers-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .flower-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+
+  .flower-card-pink {
+    background: #a7216226;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+
+  .flower-card-blue {
+    background: #0597a026;
+    background-repeat: no-repeat;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+
+  .flower-card-green {
+    background: #477d1126;
+    background-repeat: no-repeat;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+
+  .flower-names {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 32px;
+    place-items: center;
+    margin-top: 30px;
+  }
+
+  .flower-names h4:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+
+  .flower-names h4 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: var(--text-color);
+  }
 
   /* Footer Section */
 
