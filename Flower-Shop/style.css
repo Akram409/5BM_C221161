@@ -20,6 +20,24 @@ body {
 }
 
 /* Utility Classes */
+.section-margin {
+  margin: 0px 140px;
+}
+
+/* Title Style */
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* Title Paragraph Style */
+.title-paragraph {
+  font-size: 1.125rem;
+  color: var(--p-color);
+  text-align: center;
+}
 
 .container-margin {
   margin: 0px 160px;
@@ -60,7 +78,7 @@ body {
   color: var(--primary-color);
 }
 
-@media (min-width: 1000px) {
+
   /* Header Styles */
   header {
     background-color: var(--bg-color);
@@ -164,14 +182,13 @@ body {
   /* Support Section */
   .support-section {
     background-color: #2727270d;
-    padding: 85px 0px   ;
+    padding: 85px 0px;
     margin-top: 80px;
   }
 
   .support-cards {
     display: flex;
     justify-content: space-around;
-
   }
 
   .support-card {
@@ -198,50 +215,98 @@ body {
     border-bottom: 2px solid var(--primary-color);
   }
 
-/* Promotional Section Start */
-#promotional-section {
-    background-color: rgba(229, 84, 115, 0.05); 
+  /* Promotional Section Start */
+  #promotional-section {
+    background-color: rgba(229, 84, 115, 0.05);
     padding: 100px 0;
-    margin-top: 200px;
+    margin-top: 100px;
   }
-  
+
   .promotional-wrapper {
     display: flex;
     gap: 180px;
     align-items: center;
   }
-  
+
   .promotional-content {
     width: 60%;
     text-align: center;
   }
-  
+
   .promotional-heading {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--text-color);
   }
-  
+
   .promotional-heading span {
     color: var(--primary-color);
   }
-  
+
   .promotional-description {
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 1rem;
     color: var(--p-color);
   }
-  
+
   .promotional-image-container {
     width: 40%;
   }
-  
+
   .promotional-image-container img {
     width: 100%;
     border-radius: 8px;
   }
-  
+
+  /* Instagram Section Start */
+  #instagram-gallery {
+    margin-top: 128px;
+    margin-bottom: 128px;
+  }
+
+  #instagram-gallery p {
+    padding-top: 24px;
+    padding-bottom: 30px;
+  }
+
+  .instagram-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+  }
+
+  .instagram-images img {
+    width: 250px;
+  }
+
+  /* Newsletter Section Start */
+  #newsletter-signup {
+    background-image: url("./assets/Rectangle 9.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-bottom: 128px;
+  }
+
+  #newsletter-signup #email-input {
+    width: 500px;
+    height: 64px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 20px;
+  }
+
+  #newsletter-signup form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  /* Newsletter Section End */
+
   /* Footer Section */
 
   .footer {
@@ -274,4 +339,4 @@ body {
     color: #ffffff66;
     margin-top: 32px;
   }
-}
+
