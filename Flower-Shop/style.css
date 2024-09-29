@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #e55473;
+  --primary-light-color: #ffb4c4;
+  --bg-color: #e554731a;
+  --footer-background: #111010;
+  --text-color: #272727;
+  --p-color: #27272799;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Utility Classes */
+
+.container-margin {
+  margin: 0px 160px;
+}
+
+.button {
+  width: 200px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 20px 43px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  height: 64px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--primary-light-color);
+  color: var(--primary-color);
+}
+
+.heading-primary {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.paragraph-primary {
+  font-size: 1.125rem;
+  color: var(--p-color);
+  text-align: center;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+@media (min-width: 1000px) {
+  /* Header Styles */
+  header {
+    background-color: var(--bg-color);
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding-top: 50px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 4.3rem;
+    font-weight: 700;
+    color: var(--text-color);
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    color: var(--p-color);
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .hero-image img {
+    width: 520px;
+  }
+
+
+
+  /* Footer Section */
+
+.footer {
+    padding: 100px 0px 60px;
+    background-color: var(--footer-background);
+    text-align: center;
+  }
+  
+  .footer-title {
+    font-size: 3.5rem;
+  }
+  
+  .footer-title .brand-color {
+    color: var(--primary-color);
+  }
+  
+  .footer-title .text-white {
+    color: #fff;
+  }
+  
+  .footer-description {
+    font-size: 1rem;
+    color: #f2f2f2;
+    margin-top: 32px;
+    line-height: 1.5;
+    
+  }
+  
+  .footer-copyright {
+    font-size: 0.9rem;
+    color: #ffffff66;
+    margin-top: 32px;
+  }
+}
