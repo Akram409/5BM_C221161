@@ -163,17 +163,15 @@ body {
 
   /* Support Section */
   .support-section {
+    background-color: #2727270d;
+    padding: 85px 0px   ;
     margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .support-cards {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    display: flex;
+    justify-content: space-around;
+
   }
 
   .support-card {
@@ -182,13 +180,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px 120px;
-    border-radius: 8px;
-    background-color: #f2f2f2;
   }
 
   .support-card h4 {
-    font-size: 1.125rem;
+    font-size: 15px;
     font-weight: 500;
     margin-top: 24px;
     color: var(--text-color);
@@ -202,6 +197,51 @@ body {
     cursor: pointer;
     border-bottom: 2px solid var(--primary-color);
   }
+
+/* Promotional Section Start */
+#promotional-section {
+    background-color: rgba(229, 84, 115, 0.05); 
+    padding: 100px 0;
+    margin-top: 200px;
+  }
+  
+  .promotional-wrapper {
+    display: flex;
+    gap: 180px;
+    align-items: center;
+  }
+  
+  .promotional-content {
+    width: 60%;
+    text-align: center;
+  }
+  
+  .promotional-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+  }
+  
+  .promotional-heading span {
+    color: var(--primary-color);
+  }
+  
+  .promotional-description {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: var(--p-color);
+  }
+  
+  .promotional-image-container {
+    width: 40%;
+  }
+  
+  .promotional-image-container img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
   /* Footer Section */
 
   .footer {
